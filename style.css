@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.fa-trash,
+.fa-edit {
+    pointer-events: none;
+}
+
+#myTable thead tr {
+    background-color: #009879;
+    color: #ffff;
+    font-weight: bold;
+}
+
+#myTable th,
+#myTable td {
+    padding: 12px 15px;
+}
+
+#myTable tbody tr:nth-of-type(even) {
+    background-color: #eee6e6;
+}
+
+#myTable tbody tr:last-of-type {
+    border-bottom: 3px solid #009879;
+}
+
+#myTable tbody tr:hover {
+    font-weight: bold;
+    color: #009879;
+}
