@@ -21,6 +21,8 @@ const Age = document.getElementById('Age');
 const Salary = document.getElementById('Salary');
 const Img = document.getElementById('customFile');
 
+
+
 // Get the Employees
 //Method: GET
 fetch(get_url)
@@ -213,3 +215,60 @@ function sortTable(x) {
         }
     }
 }
+
+//creating manually employee Data which is an array of objects.
+let manualEmployeedata = [{
+        id: 25,
+        employee_name: 'sudip bhunia',
+        employee_age: 53,
+        employee_salary: 12540
+    },
+
+    {
+        id: 26,
+        employee_name: 'dipali kamakar',
+        employee_age: 28,
+        employee_salary: 67400
+    },
+
+    {
+        id: 27,
+        employee_name: 'biswajit soren',
+        employee_age: 22,
+        employee_salary: 10540
+    },
+
+    {
+        id: 28,
+        employee_name: 'Shubham Sharma',
+        employee_age: 46,
+        employee_salary: 34500
+    },
+
+    {
+        id: 29,
+        employee_name: 'saniya panda',
+        employee_age: 34,
+        employee_salary: 26100
+    }
+];
+
+function renderManualEmployee(result) {
+    // console.log(result);
+    result.forEach(element => {
+        output += `<tbody>
+                        <tr id = "${element.id}" class="empRows">
+                            <td>${element.id}</td>
+                            <td class = 'name'>${element.employee_name}</td>
+                            <td class = 'age'>${element.employee_age}</td>
+                            <td class = 'salary'>${element.employee_salary}/-</td>
+                            <td><a id="del-btn"><i class="fa fa-trash"></i></a></td>
+                            <td><a id="edit-btn"><i class="fas fa-edit"></i></a></td>  
+                        </tr>
+                     </tbody>`;
+    })
+    employeeList.innerHTML = output;
+};
+
+//Rendering the manual employee data
+renderManualEmployee(manualEmployeedata);
