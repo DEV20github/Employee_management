@@ -49,7 +49,7 @@ let renderEmployee = (result) => {
                             <td>${element.id}</td>
                             <td class = 'name'>${element.employee_name}</td>
                             <td class = 'age'>${element.employee_age}</td>
-                            <td class = 'salary'>${element.employee_salary}/-</td>
+                            <td class = 'salary'>${element.employee_salary}</td>
                             <td><a id="del-btn"><i class="fa fa-trash"></i></a></td>
                             <td><a id="edit-btn"><i class="fas fa-edit"></i></a></td>  
                         </tr>
@@ -261,7 +261,7 @@ function renderManualEmployee(result) {
                             <td>${element.id}</td>
                             <td class = 'name'>${element.employee_name}</td>
                             <td class = 'age'>${element.employee_age}</td>
-                            <td class = 'salary'>${element.employee_salary}/-</td>
+                            <td class = 'salary'>${element.employee_salary}</td>
                             <td><a id="del-btn"><i class="fa fa-trash"></i></a></td>
                             <td><a id="edit-btn"><i class="fas fa-edit"></i></a></td>  
                         </tr>
